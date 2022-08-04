@@ -1,0 +1,63 @@
+{
+  "kind": "collectionType",
+  "collectionName": "operations",
+  "info": {
+    "singularName": "operation",
+    "pluralName": "operations",
+    "displayName": "Operações",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "total_cost": {
+      "type": "integer"
+    },
+    "total_weight": {
+      "type": "integer"
+    },
+    "total_volume": {
+      "type": "integer"
+    },
+    "total_distance": {
+      "type": "integer"
+    },
+    "total_time": {
+      "type": "integer"
+    },
+    "color": {
+      "type": "string"
+    },
+    "polyfill": {
+      "type": "text"
+    },
+    "date": {
+      "type": "datetime"
+    },
+    "markers": {
+      "type": "json"
+    },
+    "planning": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::planning.planning"
+    },
+    "ordems": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::ordem.ordem"
+    },
+    "transport": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::transport.transport"
+    },
+    "company": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::company.company"
+    }
+  }
+}

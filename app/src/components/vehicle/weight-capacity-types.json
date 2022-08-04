@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_vehicle_weight_capacity_types",
+  "info": {
+    "displayName": "Weight Capacity Types",
+    "icon": "truck-loading"
+  },
+  "options": {},
+  "attributes": {
+    "package_type": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::package-type.package-type"
+    },
+    "weight": {
+      "type": "integer"
+    },
+    "volume": {
+      "type": "integer"
+    }
+  }
+}

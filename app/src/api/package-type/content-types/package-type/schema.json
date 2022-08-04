@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "package_types",
+  "info": {
+    "singularName": "package-type",
+    "pluralName": "package-types",
+    "displayName": "Tipo de entregas"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "number": {
+      "type": "biginteger"
+    }
+  }
+}

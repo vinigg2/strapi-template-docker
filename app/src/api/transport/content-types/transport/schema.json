@@ -1,0 +1,73 @@
+{
+  "kind": "collectionType",
+  "collectionName": "transports",
+  "info": {
+    "singularName": "transport",
+    "pluralName": "transports",
+    "displayName": "Transportes",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "vehicle_plate": {
+      "type": "string"
+    },
+    "capacity": {
+      "type": "component",
+      "repeatable": false,
+      "component": "vehicle.capacity"
+    },
+    "weight_capacity_types": {
+      "type": "component",
+      "repeatable": true,
+      "component": "vehicle.weight-capacity-types"
+    },
+    "available": {
+      "type": "boolean"
+    },
+    "multi_type": {
+      "type": "boolean"
+    },
+    "tracker": {
+      "type": "component",
+      "repeatable": false,
+      "component": "vehicle.tracker"
+    },
+    "cost": {
+      "type": "component",
+      "repeatable": false,
+      "component": "vehicle.cost"
+    },
+    "shift": {
+      "type": "component",
+      "repeatable": false,
+      "component": "vehicle.shift"
+    },
+    "break": {
+      "type": "component",
+      "repeatable": false,
+      "component": "vehicle.break"
+    },
+    "Itinerary": {
+      "type": "component",
+      "repeatable": false,
+      "component": "vehicle.itinerary"
+    },
+    "distribution_center": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::distribution-center.distribution-center"
+    },
+    "company": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::company.company"
+    }
+  }
+}

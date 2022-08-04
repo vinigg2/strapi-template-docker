@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_vehicle_shifts",
+  "info": {
+    "displayName": "Shift",
+    "icon": "calendar"
+  },
+  "options": {},
+  "attributes": {
+    "start": {
+      "type": "time"
+    },
+    "end": {
+      "type": "time"
+    }
+  }
+}

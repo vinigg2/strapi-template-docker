@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_vehicle_itineraries",
+  "info": {
+    "displayName": "Itinerary",
+    "icon": "clock"
+  },
+  "options": {},
+  "attributes": {
+    "max_cost": {
+      "type": "biginteger"
+    },
+    "max_stops": {
+      "type": "integer"
+    },
+    "max_distance": {
+      "type": "biginteger"
+    },
+    "min_capacity": {
+      "type": "biginteger"
+    },
+    "min_volume": {
+      "type": "biginteger"
+    }
+  }
+}

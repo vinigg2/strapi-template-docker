@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "distribution_centers",
+  "info": {
+    "singularName": "distribution-center",
+    "pluralName": "distribution-centers",
+    "displayName": "Centro de distribuição",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "gelocation": {
+      "type": "component",
+      "repeatable": false,
+      "component": "localizations.geolocation"
+    },
+    "companies": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::company.company"
+    },
+    "address": {
+      "type": "component",
+      "repeatable": false,
+      "component": "localizations.address"
+    }
+  }
+}

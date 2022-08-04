@@ -1,0 +1,59 @@
+{
+  "kind": "collectionType",
+  "collectionName": "plannings",
+  "info": {
+    "singularName": "planning",
+    "pluralName": "plannings",
+    "displayName": "Planejamentos"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "total_time_string": {
+      "type": "string"
+    },
+    "total_operations": {
+      "type": "integer"
+    },
+    "cost_total": {
+      "type": "integer"
+    },
+    "total_weight": {
+      "type": "integer"
+    },
+    "total_volume": {
+      "type": "integer"
+    },
+    "total_distance": {
+      "type": "integer"
+    },
+    "total_time": {
+      "type": "time"
+    },
+    "done_date": {
+      "type": "datetime"
+    },
+    "cancelled": {
+      "type": "boolean"
+    },
+    "view": {
+      "type": "boolean"
+    },
+    "route": {
+      "type": "json"
+    },
+    "request": {
+      "type": "json"
+    },
+    "body": {
+      "type": "json"
+    },
+    "ordems": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::ordem.ordem"
+    }
+  }
+}

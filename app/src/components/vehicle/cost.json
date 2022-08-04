@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_vehicle_costs",
+  "info": {
+    "displayName": "Cost",
+    "icon": "money-bill"
+  },
+  "options": {},
+  "attributes": {
+    "fixed": {
+      "type": "biginteger"
+    },
+    "variable": {
+      "type": "biginteger"
+    }
+  }
+}

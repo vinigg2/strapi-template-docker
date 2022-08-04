@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_vehicle_trackers",
+  "info": {
+    "displayName": "Tracker",
+    "icon": "map-marker-alt"
+  },
+  "options": {},
+  "attributes": {
+    "tracker_id": {
+      "type": "string"
+    },
+    "distance": {
+      "type": "biginteger"
+    }
+  }
+}

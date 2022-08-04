@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_vehicle_capacities",
+  "info": {
+    "displayName": "capacity",
+    "icon": "boxes"
+  },
+  "options": {},
+  "attributes": {
+    "volume_total": {
+      "type": "integer"
+    },
+    "weight_total": {
+      "type": "integer"
+    }
+  }
+}

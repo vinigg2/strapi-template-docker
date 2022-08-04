@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_delivery_infomations",
+  "info": {
+    "displayName": "infomations",
+    "icon": "truck"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "penalty_costs": {
+      "type": "enumeration",
+      "enum": [
+        "baixa",
+        "media",
+        "alta"
+      ]
+    },
+    "deliver_date": {
+      "type": "datetime"
+    },
+    "accept_from": {
+      "type": "time"
+    },
+    "accept_to": {
+      "type": "time"
+    },
+    "time_per_demand": {
+      "type": "integer"
+    },
+    "cost_per_demand": {
+      "type": "biginteger"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_vehicle_breaks",
+  "info": {
+    "displayName": "Break",
+    "icon": "stopwatch"
+  },
+  "options": {},
+  "attributes": {
+    "start": {
+      "type": "time"
+    },
+    "end": {
+      "type": "time"
+    },
+    "duration": {
+      "type": "integer"
+    },
+    "optional": {
+      "type": "boolean"
+    }
+  }
+}

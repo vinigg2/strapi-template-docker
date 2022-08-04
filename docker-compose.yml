@@ -1,0 +1,40 @@
+version: '3'
+
+services:
+  smarthcitybrasil-strapi:
+    build: .
+    command: sh -c 'npm install && npm run develop'
+    environment:
+      BASE_URL: http://localhost:1337
+      DATABASE_HOST: postgres
+      DATABASE_USERNAME: postgres
+      DATABASE_PASSWORD: postgres
+      NODE_ENV: development
+    ports:
+      - 1337:1337
+    networks:
+      - postgres-new-project-strapi
+    depends_on:
+        - postgres
+    volumes:
+      - ./app:/app
+      - node_modules:/app/node_modules
+  
+  postgres:
+    image: postgres
+    environment:
+      POSTGRES_DB: new-project
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    volumes:
+      - ./data:/var/lib/postgresql/data
+    networks:
+      - postgres-new-project-strapi
+
+networks:
+  postgres-smarthcitybrasil-strapi:
+    driver: bridge
+
+volumes:
+  node_modules:
+  pgadmin:

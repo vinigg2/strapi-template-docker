@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "service_points",
+  "info": {
+    "singularName": "service-point",
+    "pluralName": "service-points",
+    "displayName": "Pontos de serviço",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "geolocation": {
+      "type": "component",
+      "repeatable": false,
+      "component": "localizations.geolocation"
+    },
+    "address": {
+      "type": "component",
+      "repeatable": false,
+      "component": "localizations.address"
+    },
+    "company": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::company.company"
+    }
+  }
+}
